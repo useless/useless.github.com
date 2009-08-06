@@ -1,0 +1,173 @@
+/* Doku style */
+
+body {
+	background:	#fff;
+	font-family: Georgia, serif;
+	font-size:	10pt;
+	line-height: 1.4em;
+	margin:		0;
+}
+
+a {
+	color:		#56e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#title {
+	font-size:	3em;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	margin:		1.5em 0 0.75em 1em;
+	padding:	0 0 0.25em 0;
+	width:		14em;
+	border-bottom: 1px solid #78f;
+}
+
+#subtitle {
+	font-size:	2.5em;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	margin:		1em 0 0.75em 1.2em;
+	padding:	0 0 0.25em 0;
+	width:		16.8em;
+	border-bottom: 1px solid #78f;
+}
+
+#nav {
+	margin:		1em 0 1em 3.75em;
+	font-size:	.8em;
+	list-style:	none;
+	padding:	0;
+	width:		50em;
+	overflow:	hidden;
+}
+
+#nav li {
+	float:		left;
+	margin:		0 .5em 0 0;
+}
+
+#nav li:after {
+	content:	" ›";
+}
+
+#nav a {
+	text-decoration: none;
+}
+
+p, ol, ul {
+	margin:		0 0 1em 3em;
+	width:		42em;
+}
+
+ol, ul {
+	padding:	0 0 0 1.75em;
+}
+
+ul {
+	list-style: square;
+}
+
+dfn {
+	color:		#888;
+	margin-right: 0.5em;
+}
+
+pre {
+	font-family: Courier, monospaced;
+	font-size:	0.8em;
+	border:		1px solid #d6dadc;
+	background:	#eff0f1;
+	padding:	.5em 1em .5em .75em;
+	margin:		0 0 1.25em 3.75em;
+	width:		50em;
+}
+
+ol.toc {
+	margin:		2em 0 2em 4em;
+	color:		#89f;
+}
+
+ol.toc ol {
+	margin:		0;
+	padding:	0 0 0 1.5em;
+}
+
+p.intro {
+	font-style:	italic;
+	margin-bottom: 2em;
+	width:		35em;
+}
+
+p.cintro {
+	font-style:	italic;
+	width:		35em;
+}
+
+h1 {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	font-size:	1.5em;
+	margin:		2em 0 1em 2em;
+	width:		20em;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-weight: normal;
+	font-size:	1.25em;
+	margin:		2em 0 1em 2.4em;
+	width:		24em;
+}
+
+div.fig {
+	clear:		both;
+	margin:		2em 0 2em 5em;
+}
+
+div.fig img {
+	display:	block;
+}
+
+div.bord img {
+	border:		1px solid #89f;
+	padding:	3px;
+}
+
+#bymeta {
+	margin:		3em 0 0 0;
+	padding:	1.5em 1.5em 1.5em 3em;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	color:		#aaa;
+	background:	#202020 url(bymeta.png) repeat-x top left;
+	overflow:	hidden;
+}
+
+#bymeta em {
+	font-style:	normal;
+	white-space: nowrap;
+}
+
+#bymeta img {
+	float:		right;
+	margin:		0 1em 0 0;
+	border:		none;
+}
+
+#bymeta a {
+	color:		#fff;
+	border:		none;
+	text-decoration: none;
+}
+
+#bymeta a:hover {
+	text-decoration: underline;
+}
+
+#bymeta p {
+	margin:		0;
+}
