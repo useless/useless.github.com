@@ -77,6 +77,10 @@ dfn {
 	margin-right: 0.5em;
 }
 
+em.new {
+	margin-left: 0.5em;
+}
+
 pre {
 	font-family: Courier, monospaced;
 	font-size:	0.8em;
