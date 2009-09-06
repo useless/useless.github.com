@@ -110,6 +110,17 @@ ol.toc ol {
 	padding:	0 0 0 1.5em;
 }
 
+ul.mini {
+	list-style:	none;
+	margin:		0 0 1em 3em;
+	padding:	0;
+}
+
+ul.mini li {
+	display:	inline;
+	margin:		0 1.5em 0 0;
+}
+
 p.intro {
 	font-style:	italic;
 	margin-bottom: 2em;
@@ -162,8 +173,12 @@ div.bord img.no {
 	padding:	0;
 }
 
+div.fig p {
+	margin-left: 0;
+}
+
 table {
-	margin:		2em 0 2em 5em;
+	margin:		0 0 0.5em;
 	border-top:	1px solid #89f;
 	border-bottom: 1px solid #89f;
 	border-spacing: 0;

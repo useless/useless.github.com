@@ -18,40 +18,65 @@
 <div id="subtitle">Flashless</div>
 <p class="intro">A WebKit plug-in to display preview images for Flash based video services and block the rest.</p>
 
+<ul class="mini">
+<li><a href="#download">Download</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#usage">Usage (with screen shots)</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+
 <div class="fig"><img src="logo.png" alt="Flashless" /></div>
 
-<h1><a href="http://cloud.github.com/downloads/useless/Flashless/Flashless.1.5.dmp">Download</a> <span class="note">(.dmg, 200K)</span></h1>
-<p class="cintro">Version 1.5, requires Mac OS X 10.5 or later.</p>
-<p>Open the disk image, copy the Plugin to “~/Library/Internet Plug-Ins/” and restart Safari.</p>
+<h1><a href="http://cloud.github.com/downloads/useless/Flashless/Flashless.1.5.dmg" name="download">Download</a> <span class="note">(.dmg, 210K)</span></h1>
+<p class="cintro">Version 1.5, requires Mac OS X 10.5 or later, a Webkit browser (e.g. Safari).</p>
+<ol>
+<li><a href="http://cloud.github.com/downloads/useless/Flashless/Flashless.1.5.dmg">Download</a> and open the disk image. Quit Safari.</li>
+<li>Copy the Plugin to “/Library/Internet Plug-Ins” (for all users) or to “~/Library/Internet Plug-Ins” (for you only).</li>
+<li>Restart Safari. Enjoy.</li>
+</ol>
 
-<h1>Features</h1>
-<p><strong>Flashless</strong> blocks Flash content on a website …</p>
+<h1><a name="features"></a>Features</h1>
+<p><strong>Flashless</strong> blocks Flash content on a website. But it can display a preview for some popular video services. For some of them it can even download the video directly.</p>
+
+<p>Supported services:</p>
+<div class="fig">
 <table>
-<tr class="specs"><th>Service</th><th>Preview</th><th>Download</th><th>Jump to Original</th><th>Watch Video</th></tr>
-<tr><th>Flickr</th><td>✓</td><td>–</td><td>✓</td><td>✓</td></tr>
-<tr><th>Google Video</th><td>✓</td><td>✓</td><td>–</td><td>✓</td></tr>
-<tr><th>Viddler</th><td>✓</td><td>–</td><td>–</td><td>✓</td></tr>
-<tr><th>Vimeo</th><td>✓</td><td>–</td><td>✓</td><td>✓</td></tr>
+<tr class="specs"><th>Service</th><th>Watch Video</th><th>Preview</th><th>Download</th><th>Jump to Original</th></tr>
+<tr><th>Flickr</th><td>✓</td><td>✓</td><td>–</td><td>✓</td></tr>
+<tr><th>Google Video</th><td>✓</td><td>✓</td><td>✓</td><td>–</td></tr>
+<tr><th>Viddler</th><td>✓</td><td>✓</td><td>–</td><td>–</td></tr>
+<tr><th>Vimeo</th><td>✓</td><td>✓</td><td>–</td><td>✓</td></tr>
 <tr><th>XTube</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><th>YouTube</th><td>✓</td><td>(✓)</td><td>✓</td><td>✓</td></tr>
-<tr><th class="note">Other Sites</th><td>–</td><td>–</td><td>–</td><td>✓</td></tr>
+<tr><th>YouTube</th><td>✓</td><td>✓</td><td>✓<sup class="note">1</sup></td><td>✓</td></tr>
+<tr><th><em>Other Sites</em></th><td>✓</td><td>–</td><td>–</td><td>–</td></tr>
 </table>
+<p class="note">1) Download only avaible on youtube.com. Use “Show At ‘YouTube’” from the menu.</p>
+</div>
 
-<p>Full support for Mac OS X 10.6 Snow Leopard and 64 bit.<em class="new">NEW</em></p>
+<p>Flashless can (automatically) play or remove all elements from a source.</p>
 
-<p>Allows you to show or remove all elements from a source until you restart Safari.</p>
+<p>We fully support Mac OS X 10.6 Snow Leopard and 64 bit.<em class="new">NEW</em></p>
 
-<h1>Usage</h1>
-<p>And screenshots.</p>
-<div class="bord fig"><img src="Advertisment.png" alt="Advertisment" />Blocks Flash ads</div>
-<div class="fig"><img src="Menu.png" alt="Menu" />Options</div>
-<div class="bord fig"><img src="Preview.jpg" alt="Preview" />Preview videos. <span class="note">(<a href="">Video</a> (cc) …)</span></div>
-<div class="bord fig"><img src="Download.jpg" alt="Download" />
-Download Video …</div>
-<p><img class="no" src="option.png" alt="Option key" /></p>
 
-<h1><a href="http://github.com/useless/Flashless">Sources</a></h1>
-<p>Flashless is an open source project hostet on <a href="http://github.com">GitHub</a>. Feel free to fork and improve.</p>
+<h1><a name="usage"></a>Usage</h1>
+<p>Flashless replaces all Flash elements on a site with an unobtrusive graphic. To show the original flash just click on the placeholder.</p>
+
+<div class="bord fig"><img src="lay/ad.png" alt="Advertisment" />Blocked Flash ad.</div>
+
+<p>For content from a supported video services (see <a href="#features">Features</a>) a preview image of the video is displayed. So you can see what video will be played before even loading the Flash element. The name of the service is displayed in the lower right corner.</p>
+<div class="bord fig"><img src="lay/preview.jpg" alt="Preview" />Preview videos. <span class="note">(<a href="http://www.vimeo.com/6342152">Video</a> <a href="http://creativecommons.org/licenses/by-sa/3.0/">(cc)</a> Harald Walker)</span></div>
+
+<p><img style="float:right;" src="lay/option.png" height="32" width="32" alt="Option key" />From some Sites you can directly download the video. Just hold the option key  and click the arrow. Not all services support downloading at the moment.</p>
+<div class="bord fig"><img src="lay/download.jpg" alt="Download" />
+Download videos directly.</div>
+
+<p>Many more options available from the menu. You can remove elements from the site. You can play or remove all elements from the same source. And you can even let Flashless do it automatically for you.</p>
+<div class="fig"><img src="lay/menu.png" alt="Menu" />Options from the menu.</div>
+
+<p>To uninstall Flashless just quit Safari, move “Flashless.webplugin” from “/Library/Internet Plug-Ins” to the trash and restart Safari.</p>
+
+<h1><a href="http://github.com/useless/Flashless" name="sources">Sources</a></h1>
+<p>Flashless is an open source project hosted on <a href="http://github.com">GitHub</a>. Feel free to fork and improve.</p>
 
 <div id="bymeta">
 <img src="../lay/meta.png" alt="Meta" />
