@@ -78,7 +78,16 @@ dfn {
 }
 
 em.new {
+	color:		#78f;
 	margin-left: 0.5em;
+}
+
+.note {
+	color:		#aaa;
+}
+
+span.note a {
+	color:		#888;
 }
 
 pre {
@@ -135,11 +144,56 @@ div.fig {
 
 div.fig img {
 	display:	block;
+	margin:		0 0 0.25em 0;
+}
+
+div.fig img.no {
+	display:	inline;
+	margin:		0
 }
 
 div.bord img {
 	border:		1px solid #89f;
 	padding:	3px;
+}
+
+div.bord img.no {
+	border:		none;
+	padding:	0;
+}
+
+table {
+	margin:		2em 0 2em 5em;
+	border-top:	1px solid #89f;
+	border-bottom: 1px solid #89f;
+	border-spacing: 0;
+}
+
+table td, th {
+	padding:	0 0.2em 0;
+}
+
+tr:nth-child(2n+1) {
+	background:	#f0f0f0;
+}
+
+tr.specs {
+	background:	inherit;
+}
+
+tr.specs th {
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	padding:	0 0.5em 0;
+}
+
+th {
+	text-align:	left;
+	padding:	0 0.5em 0;
+}
+
+td {
+	text-align:	center;
 }
 
 #bymeta {
