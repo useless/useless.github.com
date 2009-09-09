@@ -88,13 +88,12 @@ a:hover {
 	background:	#888;
 }
 
-p {
+p, ol, ul {
 	margin:		0 0 1em 3em;
 	max-width:	42em;
 }
 
 ol, ul {
-	margin:		0 0 1em 3em;
 	padding:	0 0 0 1.75em;
 }
 
