@@ -21,21 +21,27 @@ a:hover {
 	text-decoration: underline;
 }
 
+#uclogo {
+	display:	block;
+	float:		right;
+	margin:		0 7.5em 1em 2em;
+}
+
 #title {
 	font-size:	3em;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
+	line-height: 1.25em;
 	margin:		1.25em 0 0.75em 1em;
-	padding:	0 0 0.25em 0;
+	padding:	0;
 }
 
 #nav {
-	margin:		1em 0 1em 3.75em;
+	margin:		0em 0 1em 3.75em;
 	font-family: 'Helvetica Neue', Arial, sans-serif;	
 	font-size:	.8em;
 	list-style:	none;
-	padding:	0;
-	width:		50em;
+	padding:	1em 0 0 0;
 	overflow:	hidden;
 }
 
@@ -55,7 +61,7 @@ a:hover {
 	border:		1px solid #888;
 	margin:		0 5em 2em 2em;
 	padding:	0.5em 0 0.5em 0;
-	width:		200px;
+	width:		15em;
 	float:		right;
 	text-align:	center;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
