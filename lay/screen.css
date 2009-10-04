@@ -1,7 +1,7 @@
 /* Useless Coding style */
 
 body {
-	background:	#bec2c7;
+	background:	#fff;
 	color:		#000;
 	font-family: Georgia, serif;
 	font-size:	10pt;
@@ -10,34 +10,44 @@ body {
 }
 
 a {
-	color:		#282d55;
-	font-weight: bold;
-	text-shadow: #fff 0 1px 0;
+	color:		#56e;
 	text-decoration: none;
 }
 
 a:hover {
-	color:		#5f6abf;
 	text-decoration: underline;
+}
+
+div.wrapper {
+	margin:		0 auto 0;
+	padding:	0 0 0 3em;
+	width:		750px;
+}
+
+#head {
+	width:		100%;
+	margin:		0 0 1.5em 0;
+	background:	#bec2c7;
+	border-bottom: 1px solid #888;
 }
 
 #uclogo {
 	display:	block;
 	float:		right;
-	margin:		0 7.5em 1em 2em;
+	margin:		0 28px 1em 2em;
 }
 
-#title {
+h1 {
 	font-size:	3em;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.25em;
-	margin:		1.25em 0 0.75em 1em;
+	margin:		1.5em 0 0.5em 0;
 	padding:	0;
 }
 
 #nav {
-	margin:		0em 0 1em 3.75em;
+	margin:		0em 0 1em 0;
 	font-family: 'Helvetica Neue', Arial, sans-serif;	
 	font-size:	.8em;
 	list-style:	none;
@@ -47,21 +57,84 @@ a:hover {
 
 #nav li {
 	float:		left;
-	margin:		0 .5em 0 0;
+	margin:		0 1.5em 0 0;
+	padding:	0;
 }
 
-#nav a {
+#nav li.act {
+	font-weight: bold;
+}
+
+#head a {
 	color:		#000;
 	text-shadow: none;
 	text-decoration: none;
 }
 
-#product {
-	background:	#dee0e3;
+#head a:hover {
+	color:		#5f6abf;
+}
+
+#head ul.toc {
+	list-style:	none;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	max-width:	100%;
+	padding:	0;
+	margin:		0 30px 0em 0;
+	overflow:	hidden;
+	font-size:	1em;
+	line-height: 1em;
+}
+
+#head ul.toc li {
+	float:		left;
+	margin:		0 1.5em 1em 0;
+	padding:	0.2em 0 0.2em;
+	border-bottom: 2px solid transparent;
+}
+
+#head ul.toc a {
+	font-weight: bold;
+}
+
+#head ul.toc li.main {
+	background:	#fff;
+	margin-right: 1em;
 	border:		1px solid #888;
-	margin:		0 5em 2em 2em;
+	padding:	0.2em 0.5em 0.2em;
+	float:		right;
+	-webkit-box-shadow: #888 0 1px 2px;
+}
+
+#head ul.toc li.act {
+	border-color: #888;
+}
+
+#head ul.toc small {
+	color:		#888;
+	font-size:	1em;
+	display:	block;
+}
+
+#hero {
+	margin:		0 0 1.5em 0;
+	width:		720px;
+	border:		1px solid #888;
+	padding:	0;
+}
+
+#hero img {
+	display:	block;
+	margin:		0;
+}
+
+#product {
+	background:	#eee;
+	color:		#888;
+	border:		1px solid #888;
+	margin:		0 30px 2em 2em;
 	padding:	0.5em 0 0.5em 0;
-	width:		15em;
+	width:		16em;
 	float:		right;
 	text-align:	center;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -73,8 +146,18 @@ a:hover {
 	margin:		0.5em auto 0.5em;
 }
 
-#product h1 {
+#product h2, #product h3 {
+	color:		#000;
 	margin:		0.5em 0 0.5em 0;
+	text-shadow: #fff 0 1px 0;
+}
+
+#product h3 {
+	font-size:	1em;
+}
+
+#product h3 a {
+	font-weight: bold;
 }
 
 #product p {
@@ -89,7 +172,7 @@ a:hover {
 }
 
 p, ol, ul {
-	margin:		0 0 1em 3em;
+	margin:		0 0 1em 0;
 	max-width:	42em;
 }
 
@@ -102,88 +185,85 @@ ul {
 }
 
 em.new {
-	color:		#fff;
+	font-weight: normal;
+	color:		#78f;
 	margin-left: 0.5em;
 }
 
 .note {
-	color:		#777;
+	color:		#aaa;
 }
 
 .note a {
-	color:		inherit;
+	color:		#888;
 }
 
 ul.toc {
 	font-size:	0.8em;
-	margin:		0 0 1em 5em;
+	margin:		0 0 1em 2em;
 	line-height: 1.4em;
 }
 
-ul.products {
-	background:	#dee0e3;
-	border:		1px solid #888;
+ul.gallery {
 	list-style:	none;
 	margin:		2em 5em 2em 5em;
 	padding:	0;
 	overflow:	hidden;
 	max-width:	40em;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
-	-webkit-border-radius: 0.5em;
 }
 
-ul.products a {
+ul.gallery a {
 	color:		inherit;
 }
 
-ul.products li {
+ul.gallery li {
 	float:		left;
 	min-width:	11em;
 	text-align:	center;
 	margin:		1em;
 }
 
-ul.products img {
+ul.gallery img {
 	display:	block;
 	margin:		0 auto 0;
 }
 
-ul.products h1 {
+ul.gallery h2 {
 	font-size:	1.25em;
 	margin:		0.5em 0 0 0;
 }
 
-ul.products p {
+ul.gallery p {
 	color:		#888;
 	font-size:	0.9em;
 	margin:		0;
 }
 
 p.intro {
-	clear:		both;
 	font-style:	italic;
 	margin-bottom: 2em;
 }
 
-h1 {
+h2 {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
 	font-size:	1.5em;
-	margin:		2em 0 1em 2em;
+	margin:		2em 0 1em 0;
 	max-width:		20em;
 }
 
-h2, h3, h4, h5 {
+h3, h4, h5, h6 {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
 	font-size:	1.25em;
-	margin:		2em 0 1em 2.4em;
+	margin:		2em 0 1em 0;
 	max-width:		24em;
 }
 
 div.caption {
 	clear:		both;
-	margin:		2em 0 2em 5em;
+	margin:		2em 0 2em 2em;
 }
 
 div.caption img {
@@ -204,8 +284,8 @@ div.caption p {
 
 table {
 	margin:		0 0 0.5em;
-	border-top:	1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top:	1px solid #888;
+	border-bottom: 1px solid #888;
 	border-spacing: 0;
 }
 
@@ -219,7 +299,7 @@ tr.specs {
 
 tr.specs th {
 	text-align: center;
-	border-bottom: 1px solid #888;
+	border-bottom: 1px solid #aaa;
 	padding:	0 0.5em 0;
 }
 
