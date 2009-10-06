@@ -10,12 +10,16 @@ body {
 }
 
 a {
-	color:		#56e;
+	color:		#56b;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+a img {
+	border:		none;
 }
 
 div.wrapper {
@@ -72,7 +76,7 @@ h1 {
 }
 
 #head a:hover {
-	color:		#5f6abf;
+	color:		#56b;
 }
 
 #head ul.toc {
@@ -80,7 +84,7 @@ h1 {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	max-width:	100%;
 	padding:	0;
-	margin:		0 30px 0em 0;
+	margin:		0 28px 0em 0;
 	overflow:	hidden;
 	font-size:	1em;
 	line-height: 1em;
@@ -89,21 +93,15 @@ h1 {
 #head ul.toc li {
 	float:		left;
 	margin:		0 1.5em 1em 0;
-	padding:	0.2em 0 0.2em;
+	padding:	0.5em 0 0.4em;
 	border-bottom: 2px solid transparent;
-}
-
-#head ul.toc a {
 	font-weight: bold;
 }
 
 #head ul.toc li.main {
-	background:	#fff;
-	margin-right: 1em;
-	border:		1px solid #888;
-	padding:	0.2em 0.5em 0.2em;
+	margin-right: 0;
+	padding:	0;
 	float:		right;
-	-webkit-box-shadow: #888 0 1px 2px;
 }
 
 #head ul.toc li.act {
@@ -186,7 +184,7 @@ ul {
 
 em.new {
 	font-weight: normal;
-	color:		#78f;
+	color:		#56e;
 	margin-left: 0.5em;
 }
 
@@ -200,8 +198,7 @@ em.new {
 
 ul.toc {
 	font-size:	0.8em;
-	margin:		0 0 1em 2em;
-	line-height: 1.4em;
+	margin:		0 0 1em 0;
 }
 
 ul.gallery {
