@@ -46,7 +46,7 @@ h1 {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.25em;
-	margin:		1.5em 0 0.5em 0;
+	margin:		1.5em 0 0.25em 0;
 	padding:	0;
 }
 
@@ -126,43 +126,53 @@ h1 {
 	margin:		0;
 }
 
-#product {
+div.aside {
+	margin:		0 30px 2em 2em;
+	width:		16em;
+	float:		right;
+}
+
+div.product {
 	background:	#eee;
 	color:		#888;
 	border:		1px solid #888;
-	margin:		0 30px 2em 2em;
 	padding:	0.5em 0 0.5em 0;
-	width:		16em;
-	float:		right;
 	text-align:	center;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	-webkit-border-radius: 0.5em;
 }
 
-#product .logo {
+div.product .logo {
 	display:	block;
 	margin:		0.5em auto 0.5em;
 }
 
-#product h2, #product h3 {
+div.product img {
+	margin:		0 0.5em 0;
+	vertical-align: middle;
+}
+
+div.product h2, div.product h3 {
 	color:		#000;
 	margin:		0.5em 0 0.5em 0;
 	text-shadow: #fff 0 1px 0;
+	max-width:	100%;
 }
 
-#product h3 {
+div.product h3 {
 	font-size:	1em;
 }
 
-#product h3 a {
+div.product h3 a {
 	font-weight: bold;
 }
 
-#product p {
+div.product p {
 	margin:		0 0 0.5em 0;
+	max-width:	100%;
 }
 
-#product hr {
+hr {
 	border:		none;
 	height:		1px;
 	margin:		0 0 0.75em 0;
@@ -237,9 +247,29 @@ ul.gallery p {
 	margin:		0;
 }
 
+ul.portfolio {
+	list-style-type: none;
+	padding:	0;
+	margin:		0 0 2em 0;
+}
+
+ul.portfolio li {
+	overflow:	hidden;
+	margin:		0 0 2em 0;
+}
+
+ul.portfolio img {
+	float:		left;
+	margin:		0 1em 0 0;
+}
+
+ul.portfolio h2 {
+	margin:		0.75em 0 0 0;
+}
+
 p.intro {
 	font-style:	italic;
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 
 h2 {
