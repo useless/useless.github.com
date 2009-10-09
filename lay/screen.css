@@ -35,6 +35,15 @@ div.wrapper {
 	border-bottom: 1px solid #888;
 }
 
+#foot {
+	width:		100%;
+	margin:		3em 0 -3em 0;
+	background:	#bec2c7;
+	border-top: 1px solid #888;
+	clear:		both;
+	overflow:	hidden;
+}
+
 #uclogo {
 	display:	block;
 	float:		right;
@@ -69,13 +78,13 @@ h1 {
 	font-weight: bold;
 }
 
-#head a {
+#head a, #foot a {
 	color:		#000;
 	text-shadow: none;
 	text-decoration: none;
 }
 
-#head a:hover {
+#head a:hover, #foot a:hover {
 	color:		#56b;
 }
 
@@ -108,12 +117,6 @@ h1 {
 	border-color: #888;
 }
 
-#head ul.toc small {
-	color:		#888;
-	font-size:	1em;
-	display:	block;
-}
-
 #hero {
 	margin:		0 0 1.5em 0;
 	width:		720px;
@@ -142,14 +145,9 @@ div.product {
 	-webkit-border-radius: 0.5em;
 }
 
-div.product .logo {
+.logo {
 	display:	block;
 	margin:		0.5em auto 0.5em;
-}
-
-div.product img {
-	margin:		0 0.5em 0;
-	vertical-align: middle;
 }
 
 div.product h2, div.product h3 {
@@ -170,6 +168,30 @@ div.product h3 a {
 div.product p {
 	margin:		0 0 0.5em 0;
 	max-width:	100%;
+}
+
+div.cat {
+	float:left;
+	line-height: 1em;
+	margin:		0 3em 0 0;
+}
+
+div.cat h2 {
+	font-size:	1em;
+	font-weight: bold;
+	margin:		1em 0 1em 0;
+}
+
+ul.mini {
+	list-style-type: none;
+	margin:		0 0 1em 0;
+	padding:	0;
+	overflow:	hidden;
+}
+
+ul.mini li {
+	float:		left;
+	margin:		0 2em 0 0;
 }
 
 hr {
