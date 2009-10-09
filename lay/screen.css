@@ -132,6 +132,7 @@ h1 {
 div.aside {
 	margin:		0 30px 2em 2em;
 	width:		16em;
+	clear:		right;
 	float:		right;
 }
 
@@ -212,6 +213,32 @@ ol, ul {
 
 ul {
 	list-style: square;
+}
+
+q {
+	display:	block;
+	margin:		0 0 0 0.3em;
+	text-indent: -0.3em;
+}
+
+q:before {
+	content:	"“";
+}
+
+q:after {
+	content:	"”";
+}
+
+cite {
+	display:	block;
+	margin:		0 0 1em 0;
+	text-align:	right;
+	color:		#aaa;
+	font-style:	normal;
+}
+
+cite:before {
+	content:	"—";
 }
 
 em.new {
