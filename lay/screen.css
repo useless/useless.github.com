@@ -136,6 +136,11 @@ div.aside {
 	float:		right;
 }
 
+img.aside {
+	float:		right;
+	margin:		-1em -1em 1em 2em;
+}
+
 div.product {
 	background:	#eee;
 	color:		#888;
@@ -200,6 +205,7 @@ hr {
 	height:		1px;
 	margin:		0 0 0.75em 0;
 	background:	#888;
+	clear:		both;
 }
 
 p, ol, ul {
@@ -260,42 +266,6 @@ ul.toc {
 	margin:		0 0 1em 0;
 }
 
-ul.gallery {
-	list-style:	none;
-	margin:		2em 5em 2em 5em;
-	padding:	0;
-	overflow:	hidden;
-	max-width:	40em;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-ul.gallery a {
-	color:		inherit;
-}
-
-ul.gallery li {
-	float:		left;
-	min-width:	11em;
-	text-align:	center;
-	margin:		1em;
-}
-
-ul.gallery img {
-	display:	block;
-	margin:		0 auto 0;
-}
-
-ul.gallery h2 {
-	font-size:	1.25em;
-	margin:		0.5em 0 0 0;
-}
-
-ul.gallery p {
-	color:		#888;
-	font-size:	0.9em;
-	margin:		0;
-}
-
 ul.portfolio {
 	list-style-type: none;
 	padding:	0;
@@ -309,7 +279,7 @@ ul.portfolio li {
 
 ul.portfolio img {
 	float:		left;
-	margin:		0 1em 0 0;
+	margin:		0 1em 0.25em 0;
 }
 
 ul.portfolio h2 {
