@@ -7,7 +7,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../lay/screen.css" />
-<meta name="viewport" content="width=700" />
+<meta name="viewport" content="width=800" />
 </head>
 
 <body>
@@ -34,32 +34,71 @@
 
 <div class="wrapper">
 <ul class="toc">
+<li><a href="#notes">Release Notes</a></li>
 <li><a href="#install">Install/Uninstall</a></li>
-<li>How can I contribute?</li>
+<li><a href="#support">Supported Services</a></li>
+<li><a href="#sources">Sources and older Versions</a></li>
+</ul>
+
+<h2><a name="notes"></a>Release Notes</h2>
+<h3>Version 2.0</h3>
+<p>“Delegation” <span class="note">— 20Oct2009</span></p>
+<ul>
+<li>Increased performance due to multithreading.</li>
+<li>Use command/option/shift keys for original/download/direct play.</li>
+<li>Support for blip.tv, Vimeo and Flickr downloads.</li>
+</ul>
+
+<h3>Version 1.5</h3>
+<p>“Clusterimage” <span class="note">— 09Sep2009</span></p>
+<ul>
+<li>Mac OS X 10.6 Snow Leopard and 64 bit are fully supported.</li>
+<li>Icon changes when pressing option key where download is available.</li>
+<li>Open original for a video.</li>
 </ul>
 
 <h2><a name="install"></a>Install/Uninstall</h2>
-<p><em>Version 1.5, requires Mac OS X 10.5 or 10.6, a Webkit browser (e.g. Safari).</em></p>
+<p><em>Version 2.0, requires Mac OS X 10.5 or 10.6, a WebKit browser (e.g. Safari).</em></p>
 <ol>
-<li><a href="http://cloud.github.com/downloads/useless/Flashless/Flashless.1.5.dmg">Download</a> and open the disk image. Quit Safari.</li>
-<li>Copy the Plugin to “/Library/Internet Plug-Ins” (for all users) or to “~/Library/Internet Plug-Ins” (for you only).</li>
+<li><a href="http://cloud.github.com/downloads/useless/Flashless/Flashless-2.0.dmg">Download</a> and open the disk image. Quit Safari.</li>
+<li>Copy the Plug-in to “/Library/Internet Plug-Ins” (for all users) or to “~/Library/Internet Plug-Ins” (for you only).</li>
 <li>Restart Safari. Enjoy.</li>
 </ol>
 
 <p>To uninstall <em>Flashless</em> just quit Safari, move “Flashless.webplugin” from “/Library/Internet Plug-Ins” to the trash and restart Safari.</p>
 
-I have a great idea to make Flashless better. Will you implement it?
-Maybe. Let me hear about it. Or fork Flashless, implement it and send me a pull request.
-
-<h2><a href="http://github.com/useless/Flashless" name="sources">Sources</a></h2>
-<p><em>Flashless</em> is an open source project hosted on <a href="http://github.com">GitHub</a>. Feel free to <a href="http://github.com/useless/Flashless">contribute</a>.</p>
-<p><a href="http://github.com/useless/Flashless/downloads">Older versions</a> can by found there too.</p>
+<h2><a name="support"></a>Supported Services</h2>
+<p>Basic usage (blocking, playing, removing) is available for all Flash content from every source.</p>
+<p>However, preview, download and jumping to the original are only usable with some sites. The following video services are currently supported:</p>
+<div class="caption">
+<table>
+<tr class="specs"><th>Service</th><th>Watch</th><th>Preview</th><th>Download</th><th>Jump to Original</th></tr>
+<tr><th>Blip.tv<em class="new">NEW</em></th><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><th>Flickr</th><td>✓</td><td>✓</td><td>✓<em class="new">NEW</em></td><td>✓</td></tr>
+<tr><th>Google Video</th><td>✓</td><td>✓<sup class="note">1</sup></td><td>✓<sup class="note">1</sup></td><td>✓</td></tr>
+<tr><th>TwitVid</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><th>Viddler</th><td>✓</td><td>✓</td><td>–</td><td>–</td></tr>
+<tr><th>Vimeo</th><td>✓</td><td>✓</td><td>✓<em class="new">NEW</em></td><td>✓</td></tr>
+<tr><th>XTube</th><td>✓</td><td>✓<sup class="note">2</sup></td><td>✓</td><td>✓</td></tr>
+<tr><th>YouTube</th><td>✓</td><td>✓</td><td>✓<sup class="note">1</sup></td><td>✓</td></tr>
+<tr><th><em>Other Sites</em></th><td>✓</td><td>–</td><td>–</td><td>–</td></tr>
+</table>
+<p class="note">1) Only available on original site. Use “Show At ‘…’” from the menu.</p>
+<p class="note">2) Not available for all videos.</p>
 </div>
+<p>All services that support download also support direct play.</p>
+
+<h2>Sources and older Versions</h2>
+<p><em>Flashless</em> is an open source project hosted on <a href="http://github.com/useless/Flashless">GitHub</a>. Feel free to <a href="http://github.com/useless/Flashless">contribute</a>.</p>
+<p><a href="http://github.com/useless/Flashless/downloads">Older versions</a> can by found there too.</p>
+
+</div>
+
 
 <div id="bymeta">
 <img src="../lay/meta.png" alt="Meta" />
 <p><a href="http://useless.github.com/flashless/faq.html">useless.github.com/flashless/faq.html</a> — Useless Coding.</p>
-<p>Last edited on <em>September 8, 2009</em>.</p>
+<p>Last edited on <em>October 12, 2009</em>.</p>
 </div>
 
 </body>
