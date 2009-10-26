@@ -379,6 +379,25 @@ td {
 	border:		none;
 }
 
+#bymeta ul.mini  {
+	margin:		0.75em 2em 0 0;
+	float:		right;
+}
+
+#bymeta ul.mini li {
+	margin-right: 0.5em;
+}
+
+#bymeta ul.mini li:before {
+	content:	"·";
+	margin-right: 0.5em;
+	font-weight: normal;
+}
+
+#bymeta ul.mini li:first-child:before {
+	content:	"";
+}
+
 #bymeta a {
 	color:		#fff;
 	border:		none;
