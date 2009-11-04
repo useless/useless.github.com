@@ -12,6 +12,7 @@ body {
 a {
 	color:		#56b;
 	text-decoration: none;
+	-webkit-transition: 0.2s;
 }
 
 a:hover {
@@ -142,6 +143,7 @@ img.aside {
 }
 
 div.product {
+	position:	relative;
 	background:	#eee;
 	color:		#888;
 	border:		1px solid #888;
@@ -149,6 +151,12 @@ div.product {
 	text-align:	center;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	-webkit-border-radius: 0.5em;
+}
+
+.badge {
+	position:	absolute;
+	top:		0px;
+	right:		0px;
 }
 
 .logo {
@@ -233,6 +241,14 @@ q:before {
 
 q:after {
 	content:	"”";
+}
+
+q.de:before {
+	content:	"„";
+}
+
+q.de:after {
+	content:	"“";
 }
 
 cite {

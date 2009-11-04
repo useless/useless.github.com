@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Flashless FAQ — Useless Coding</title>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../lay/screen.css" />
+<meta name="viewport" content="width=800" />
+</head>
+
+<body>
+<div id="head">
+<div class="wrapper">
+<div id="uclogo"><a href="../"><img src="../../lay/uclogo.png" width="134" height="133" alt="Useless Coding" /></a></div>
+<ul id="nav">
+<li><a href="../">Useless Coding</a></li>
+<li class="act"><a href="../#products">Produkte</a></li>
+<li><a href="http://uselessness.de/">Blog</a></li>
+<li><a href="../about/">Über</a></li>
+</ul>
+
+<h1>Flashless</h1>
+<p class="intro">Ein WebKit-Plugin, das eine Vorschau für Flash-Video-Dienste anzeigt und den Rest blockiert.</p>
+
+<ul class="toc">
+<li class="main"><a href="download.html"><img src="../lay/download.png" height="30" width="134" alt="Download Now" /></a></li>
+<li><a href=".">Übersicht</a></li>
+<li><a href="features.html">Features</a></li>
+<li class="act"><a href="faq.html">FAQ</a></li>
+<li><a href="http://github.com/useless/Flashless">Quellen</a></li>
+</ul>
+</div>
+</div>
+
+<div class="wrapper">
+<ul class="toc">
+<li><a href="#notes">Versionshinweise</a></li>
+<li><a href="#install">De-/Installation</a></li>
+<li><a href="#support">Unterstützte Dienste</a></li>
+<li><a href="#sources">Quellen und ältere Versionen</a></li>
+</ul>
+
+<h2><a name="notes"></a>Versionshinweise</h2>
+
+<h3>Version 2.0.1</h3>
+<p>“Panic” <span class="note">— 6Nov2009</span></p>
+<ul>
+<li>Fehlerbehebung für YouTube-Downloads und TwitVid-Vorschauen.</li>
+</ul>
+
+<h3>Version 2.0</h3>
+<p>„Delegation“ <span class="note">— 20Okt2009</span></p>
+<ul>
+<li>Erhöhte Geschwindigkeit dank Multithreading.</li>
+<li>Die Icons werden auch bei sehr kleinen Flash-Elementen angezeigt.</li>
+<li>Original/Download/Abspielen ohne Flash sind über Klick mit Befehls-/Wahl-/Umschalttaste erreichbar.</li>
+<li>Unterstützung für blip.tv, Vimeo, Flickr und überall funktionierende YouTube-Downloads.</li>
+</ul>
+
+<h3>Version 1.5</h3>
+<p>„Clusterimage“ <span class="note">— 09Sep2009</span></p>
+<ul>
+<li>Volle Unterstützung für Mac OS X 10.6 Snow Leopard und 64 Bit.</li>
+<li>Das Icon ändert sich bei gedrückter Wahltaste, falls der Download verfügbar ist.</li>
+<li>Original-Seite eines Videos kann angezeigt werden.</li>
+</ul>
+
+<h2><a name="install"></a>De-/Installation</h2>
+<p><em>Version 2.0, erfordert Mac OS X 10.5 oder 10.6, einen WebKit-Browser (z.B. Safari).</em></p>
+<ol>
+<li><a href="download.html">Laden</a> und Öffnen Sie das Diskimage. Beenden Sie Safari.</li>
+<li>Kopieren Sie das Plugin nach „/Library/Internet Plug-Ins“ (für alle Benutzer) oder nach „~/Library/Internet Plug-Ins“ (nur für Sie).</li>
+<li>Starten Sie Safari neu. Fertig.</li>
+</ol>
+
+<p>Um <em>Flashless</em> zu deinstallieren, beenden Sie Safari, bewegen Sie „Flashless.webplugin“ aus „/Library/Internet Plug-Ins“ in den Papierkorb und starten Sie Safari neu.</p>
+
+<h2><a name="support"></a>Unterstützte Dienste</h2>
+<p>Grundlegende Funktionen (Blockieren, Abspielen, Entfernen) sind bei allen Flash-Elementen auf jeder Webseite verfügbar.</p>
+<p>Vorschau, Download und Gehe zum Original funktionieren allerdings nur bei bestimmten Seiten. Folgende Video-Dienste werden derzeit unterstützt:</p>
+<div class="caption">
+<table>
+<tr class="specs"><th>Dienst</th><th>Ansehen</th><th>Vorschau</th><th>Download</th><th>Zum Original gehen</th></tr>
+<tr><th>Blip.tv<em class="new">NEU</em></th><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><th>Flickr</th><td>✓</td><td>✓</td><td>✓<em class="new">NEU</em></td><td>✓</td></tr>
+<tr><th>Google Video</th><td>✓</td><td>✓<sup class="note">1</sup></td><td>✓<sup class="note">1</sup></td><td>✓</td></tr>
+<tr><th>TwitVid</th><td>✓</td><td>✓</td><td>–</td><td>✓</td></tr>
+<tr><th>Viddler</th><td>✓</td><td>✓</td><td>–</td><td>–</td></tr>
+<tr><th>Vimeo</th><td>✓</td><td>✓</td><td>✓<em class="new">NEU</em></td><td>✓</td></tr>
+<tr><th>XTube</th><td>✓</td><td>✓<sup class="note">2</sup></td><td>✓</td><td>✓</td></tr>
+<tr><th>YouTube</th><td>✓</td><td>✓</td><td>✓<em class="new">Verbessert</em></td><td>✓</td></tr>
+<tr><th><em>Andere Seiten</em></th><td>✓</td><td>–</td><td>–</td><td>–</td></tr>
+</table>
+<p class="note">1) Nur auf ursprünglicher Seite verfügbar. Siehe „Bei ‚…‘ anzeigen“ im Menü.</p>
+<p class="note">2) Nicht für alle Videos verfügbar.</p>
+</div>
+<p>Bei allen Diensten bei denen der Download unterstützt wird, kann man das Video auch ohne Flash abspielen.</p>
+
+<h2><a  name="sources"></a>Quellen und ältere Versionen</h2>
+<p><em>Flashless</em> ist ein Open-Source-Projekt auf <a href="http://github.com/useless/Flashless">GitHub</a>. <a href="http://github.com/useless/Flashless">Beiträge</a> zum Projekt sind willkommen.</p>
+<p><a href="http://github.com/useless/Flashless/downloads">Ältere Versionen</a> sind dort ebenfalls zu finden.</p>
+
+</div>
+
+
+<div id="bymeta">
+<img src="../../lay/meta.png" alt="Meta" />
+<ul class="mini">
+<li><a href="../../flashless/faq.html">en</a></li>
+<li><a href="faq.html">de</a></li>
+</ul>
+
+<p><a href="http://useless.github.com/de/flashless/faq.html">useless.github.com/de/flashless/faq.html</a> — Useless Coding.</p>
+<p>Zuletzt am <em>19. Oktober 2009</em> geändert.</p>
+</div>
+
+</body>
+</html>
