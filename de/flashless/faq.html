@@ -40,6 +40,7 @@
 <li><a href="#notes">Versionshinweise</a></li>
 <li><a href="#install">De-/Installation</a></li>
 <li><a href="#support">Unterstützte Dienste</a></li>
+<li><a href="#issues">Bekannte Probleme</a></li>
 <li><a href="#sources">Quellen und ältere Versionen</a></li>
 </ul>
 
@@ -77,6 +78,25 @@
 </div>
 <p>Bei allen Diensten bei denen der Download unterstützt wird, kann man das Video auch ohne Flash abspielen.</p>
 
+
+<h2><a name="issues"></a>Bekannte Probleme</h2>
+<p>Obwohl die meisten Seiten problemlos mit <em>Flashless</em> zusammenarbeiten, können gelegentlich Probleme auftreten.</p>
+
+<h3>Facebook: Farmville, …</h3>
+<p>Möglicherweise treten bei der Verwendung von einigen Facebook-Apps (z.B. Farmville) Probleme auf.</p>
+<p>Um diese zu beseitigen, führen Sie folgende Schritte aus:</p>
+<ol>
+<li>Wählen Sie im <em>Finder</em> aus dem Menü <em>Gehe zu › Dienstprogramme</em>.</li>
+<li>Starten Sie <em>Terminal</em> durch einen Doppelklick auf das zugehörige Symbol.</li>
+<li>Geben Sie folgenden Text ein, oder fügen Sie ihn über die Zwischenablage ein.
+<pre>defaults write de.uselessness.Flashless UCWhitelist -array-add "static.ak.fbcdn.net"</pre>
+</li>
+<li>Betätigen Sie die Eingabetaste.</li>
+<li>Beenden Sie <em>Terminal</em> und starten Sie <em>Safari</em> neu.</li>
+</ol>
+<p>Die Facebook-Apps sollten nun funktionieren.</p>
+
+
 <h2><a  name="sources"></a>Quellen und ältere Versionen</h2>
 <p><em>Flashless</em> ist ein Open-Source-Projekt auf <a href="http://github.com/useless/Flashless">GitHub</a>. <a href="http://github.com/useless/Flashless">Beiträge</a> zum Projekt sind willkommen.</p>
 <p><a href="http://github.com/useless/Flashless/downloads">Ältere Versionen</a> sind dort ebenfalls zu finden.</p>
@@ -92,7 +112,7 @@
 </ul>
 
 <p><a href="http://useless.github.com/de/flashless/faq.html">useless.github.com/de/flashless/faq.html</a> — Useless Coding.</p>
-<p>Zuletzt am <em>19. Oktober 2009</em> geändert.</p>
+<p>Zuletzt am <em>26. November 2009</em> geändert.</p>
 </div>
 
 </body>

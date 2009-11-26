@@ -40,6 +40,7 @@
 <li><a href="#notes">Release Notes</a></li>
 <li><a href="#install">Install/Uninstall</a></li>
 <li><a href="#support">Supported Services</a></li>
+<li><a href="#issues">Known Issues</a></li>
 <li><a href="#sources">Sources and older Versions</a></li>
 </ul>
 
@@ -77,6 +78,25 @@
 </div>
 <p>All services that support download also support direct play.</p>
 
+
+<h2><a name="issues"></a>Known Issues</h2>
+<p>Although most sites work flawlessly with <em>Flashless</em>, some may have issues.</p>
+
+<h3>Facebook: Farmville, …</h3>
+<p>You may experience problems when trying to use some Facebook apps (e.g. Farmville).</p>
+<p>To fix them follow these steps:</p>
+<ol>
+<li>In the <em>Finder</em> choose <em>Go › Utilities</em>.</li>
+<li>Start <em>Terminal</em> by double clicking its icon.</li>
+<li>Enter the following text or paste it.
+<pre>defaults write de.uselessness.Flashless UCWhitelist -array-add "static.ak.fbcdn.net"</pre>
+</li>
+<li>Press Enter.</li>
+<li>Quit <em>Terminal</em> and restart <em>Safari</em>.</li>
+</ol>
+<p>Facebook apps should work now.</p>
+
+
 <h2><a  name="sources"></a>Sources and older Versions</h2>
 <p><em>Flashless</em> is an open source project hosted on <a href="http://github.com/useless/Flashless">GitHub</a>. Feel free to <a href="http://github.com/useless/Flashless">contribute</a>.</p>
 <p><a href="http://github.com/useless/Flashless/downloads">Older versions</a> can by found there too.</p>
@@ -92,7 +112,7 @@
 </ul>
 
 <p><a href="http://useless.github.com/flashless/faq.html">useless.github.com/flashless/faq.html</a> — Useless Coding.</p>
-<p>Last edited on <em>October 26, 2009</em>.</p>
+<p>Last edited on <em>November 26, 2009</em>.</p>
 </div>
 
 </body>
