@@ -32,14 +32,14 @@ div.wrapper {
 #head {
 	width:		100%;
 	margin:		0 0 1.5em 0;
-	background:	#bec2c7;
+	background:	#bec2c7 url(back.jpg);
 	border-bottom: 1px solid #888;
 }
 
 #foot {
 	width:		100%;
 	margin:		3em 0 -3em 0;
-	background:	#bec2c7;
+	background:	#bec2c7 url(back.jpg);
 	border-top: 1px solid #888;
 	clear:		both;
 	overflow:	hidden;
@@ -142,6 +142,13 @@ img.aside {
 	margin:		-1em -1em 1em 2em;
 }
 
+.msg {
+	border:		1px solid #56b;
+	margin:		1.5em 0 2em 0;
+	padding:	0.5em 1em 0.5em;
+	width:		32em;
+}
+
 div.product {
 	position:	relative;
 	background:	#eee;
@@ -184,6 +191,10 @@ div.product p {
 	max-width:	100%;
 }
 
+div.product hr {
+	margin:		0 0 0.5em 0;
+}
+
 div.cat {
 	float:left;
 	line-height: 1em;
@@ -211,7 +222,7 @@ ul.mini li {
 hr {
 	border:		none;
 	height:		1px;
-	margin:		0 0 0.75em 0;
+	margin:		1.5em 0 1.5em 0;
 	background:	#888;
 	clear:		both;
 }
@@ -293,24 +304,52 @@ ul.toc {
 	margin:		0 0 1em 0;
 }
 
+ul.features {
+	list-style-type: none;
+	padding:	0;
+}
+
+ul.features li {
+	margin:		0 0 1.5em 0;
+	overflow:	hidden;
+}
+
+ul.features img {
+	float:		left;
+	margin:		0 0.75em 0.25em 0;
+}
+
 ul.portfolio {
 	list-style-type: none;
 	padding:	0;
-	margin:		0 0 2em 0;
+	margin:		2em 0 2em 0;
+	overflow:	hidden;
+	max-width:	100%;
 }
 
 ul.portfolio li {
+	float:		left;
+	width:		30%;
+	min-height:	8em;
+	margin:		0 2.5em 2em 0;
+	padding:	0 1em 0 96px;
+	background:	#eee;
+	border:		2px solid #aaa;
+	-webkit-border-radius: 0.7em;
 	overflow:	hidden;
-	margin:		0 0 2em 0;
+}
+
+ul.portfolio li:hover {
+	border-color: #888;
 }
 
 ul.portfolio img {
 	float:		left;
-	margin:		0 1em 0.25em 0;
+	margin:		1.5em 0 0 -80px;
 }
 
 ul.portfolio h2 {
-	margin:		0.75em 0 0 0;
+	margin:		0.5em 0 0.5em 0;
 }
 
 p.intro {
