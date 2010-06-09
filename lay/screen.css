@@ -151,13 +151,14 @@ img.aside {
 
 div.product {
 	position:	relative;
-	background:	#eee;
+	background:	#eee url(product.png) 50% 0% no-repeat;
 	color:		#888;
 	border:		1px solid #888;
 	padding:	0.5em 0 0.5em 0;
 	text-align:	center;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
-	-webkit-border-radius: 0.5em;
+	border-radius:	0.75em;
+	-webkit-border-radius: 0.75em;
 }
 
 .badge {
@@ -168,7 +169,7 @@ div.product {
 
 .logo {
 	display:	block;
-	margin:		0.5em auto 0.5em;
+	margin:		1.5em auto 0.5em;
 }
 
 div.product h2, div.product h3 {
