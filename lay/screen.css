@@ -118,16 +118,23 @@ h1 {
 	border-color: #888;
 }
 
-#hero {
-	margin:		0 0 1.5em 0;
-	width:		720px;
-	border:		1px solid #888;
+ul.hero {
+	list-style-type: none;
 	padding:	0;
 }
 
-#hero img {
+ul.hero li {
+	margin:		2em 0 3em 0;
+}
+
+ul.hero img {
 	display:	block;
-	margin:		0;
+	margin:		0 0 1em 0;
+}
+
+ul.hero p {
+	margin:		0 0 0.5em 0;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 div.aside {
@@ -334,9 +341,10 @@ ul.portfolio li {
 	min-height:	8em;
 	margin:		0 2.5em 2em 0;
 	padding:	0 1em 0 96px;
-	background:	#eee;
+	background:	#eee url(bright.jpg);
 	border:		2px solid #aaa;
-	-webkit-border-radius: 0.7em;
+	border-radius: 0.75em;
+	-webkit-border-radius: 0.75em;
 	overflow:	hidden;
 }
 
@@ -346,6 +354,7 @@ ul.portfolio li:hover {
 
 ul.portfolio img {
 	float:		left;
+	border:		none;
 	margin:		1.5em 0 0 -80px;
 }
 
