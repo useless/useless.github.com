@@ -135,12 +135,19 @@ h3, h4, h5, h6 {
 }
 
 ul.hero {
+	margin:		2em 0 2em 0;
 	list-style-type: none;
 	padding:	0;
+	overflow:	hidden;
 }
 
 ul.hero li {
-	margin:		2em 0 3em 0;
+	margin:		0;
+}
+
+ul.hero li.mini {
+	float:		left;
+	margin-right: 15px;
 }
 
 ul.hero img {
@@ -169,7 +176,7 @@ img.aside {
 	border:		1px solid #56b;
 	margin:		1.5em 0 2em 0;
 	padding:	0.5em 1em 0.5em;
-	width:		450px;
+	max-width:	450px;
 }
 
 div.product {
