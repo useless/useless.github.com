@@ -27,6 +27,7 @@ div.wrapper {
 	margin:		0 auto 0;
 	padding:	0 1em 0 2em;
 	width:		750px;
+	overflow:	hidden;
 }
 
 #head {
@@ -38,11 +39,10 @@ div.wrapper {
 
 #foot {
 	width:		100%;
-	margin:		3em 0 -3em 0;
+	margin:		2em 0 -2em 0;
 	background:	#bec2c7 url(back.jpg);
 	border-top: 1px solid #888;
 	clear:		both;
-	overflow:	hidden;
 }
 
 #uclogo {
@@ -135,7 +135,7 @@ h3, h4, h5, h6 {
 }
 
 ul.hero {
-	margin:		2em 0 2em 0;
+	margin:		0;
 	list-style-type: none;
 	padding:	0;
 	overflow:	hidden;
@@ -374,7 +374,7 @@ ul.features a:after {
 ul.portfolio {
 	list-style-type: none;
 	padding:	0;
-	margin:		2em 0 2em 0;
+	margin:		0;
 	overflow:	hidden;
 	max-width:	100%;
 }
@@ -462,25 +462,28 @@ td {
 	text-align:	center;
 }
 
+#bird {
+	margin:		-65px 0 0 0;
+	padding:	0;
+	float:		right;
+}
+
 #bymeta {
 	clear:		both;
-	margin:		3em 0 0 0;
-	padding:	1.5em 1.5em 1.5em 3em;
+	margin:		2em 0 0 0;
+	padding:	20px 0 1.5em 0;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	color:		#aaa;
 	background:	#202020 url(bymeta.png) repeat-x top left;
-	overflow:	hidden;
+}
+
+#bymeta div.wrapper {
+	overflow:	visible;
 }
 
 #bymeta em {
 	font-style:	normal;
 	white-space: nowrap;
-}
-
-#bymeta img {
-	float:		right;
-	margin:		0 1em 0 0;
-	border:		none;
 }
 
 #bymeta ul.mini  {
