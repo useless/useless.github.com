@@ -406,6 +406,20 @@ ul.portfolio h2 {
 	margin:		0.5em 0 0.5em 0;
 }
 
+ul.section li {
+	margin:		0 0 1em 0;
+}
+
+ul.section h3 {
+	font-size:	1em;
+	font-weight: bold;
+	margin:		0 0 0.5em 0;
+}
+
+ul.section p {
+	margin:		0;
+}
+
 p.intro {
 	font-style:	italic;
 	margin-bottom: 1.5em;
