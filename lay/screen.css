@@ -330,6 +330,14 @@ em.new {
 	color:		#555;
 }
 
+.buttons {
+	margin:		2em 0 2em 0;
+}
+
+.buttons img {
+	margin:		0 12px 0 0;
+}
+
 ul.toc {
 	font-size:	0.8em;
 	margin:		0 0 1em 0;
