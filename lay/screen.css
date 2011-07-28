@@ -375,7 +375,11 @@ ul.features a {
 	float:		right;
 }
 
-ul.features a:after {
+a.more {
+	margin-left: 2em;
+}
+
+ul.features a:after, a.more:after {
 	content:	" ›";
 }
 
